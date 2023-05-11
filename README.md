@@ -8,4 +8,3 @@
 * Ruby
 * Rails
 * Git
-* git コミット用コメント
