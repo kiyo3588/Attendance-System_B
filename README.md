@@ -8,4 +8,3 @@
 * Ruby
 * Rails
 * Git
-* コミット用めっせ
