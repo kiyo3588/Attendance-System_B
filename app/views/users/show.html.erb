@@ -1,6 +1,6 @@
 <% provide(:title, @user.name) %>
 <div>
-  <table class="table table-bordered table-condenced user-table">
+  <table class="table table-bordered table-condensed user-table">
     <tr>
       <td>時間管理表</td>
       <td>指定勤務時間</td>
@@ -9,8 +9,8 @@
     </tr>
     
     <tr>
-      <td>所属</td>
-      <td>名前:<%= @user.name %></td>
+      <td>所属：<%= @user.department.present? ? @user.department : "未所属" %></td>
+      <td>名前：<%= @user.name %></td>
       <td>出勤日数</td>
       <td>月末日</td>
     </tr>
