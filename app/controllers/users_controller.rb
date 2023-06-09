@@ -29,10 +29,12 @@ class UsersController < ApplicationController
   end
   
   def edit
+  # 基本情報の更新用のフォーム用に変数を設定
+    @basic_info = @user.basic_info
   end
   
   def update
-    if @user.update_attributes(user_params)
+    if @user.update(user_params) && @user.basic_info.update(basic_info_params)
        flash[:success] = "ユーザー情報を更新しました。"
        redirect_to @user
     else

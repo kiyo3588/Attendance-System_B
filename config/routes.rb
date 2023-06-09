@@ -13,6 +13,8 @@ Rails.application.routes.draw do
       patch 'update_basic_info'
       get 'attendances/edit_one_month'
       patch 'attendances/update_one_month'
+      get 'edit_basic_info' # 基本情報の更新ページへのルートを追加
+      patch 'update_basic_info' # 基本情報の更新アクションへのルートを追加
     end
     resources :attendances, only: :update
   end
