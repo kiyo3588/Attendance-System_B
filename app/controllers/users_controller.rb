@@ -29,8 +29,6 @@ class UsersController < ApplicationController
   end
   
   def edit
-  # 基本情報の更新用のフォーム用に変数を設定
-    @basic_info = @user.basic_info
   end
   
   def update
