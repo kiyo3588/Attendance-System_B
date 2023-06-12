@@ -1,8 +1,9 @@
 /* ユーザー情報テーブル */
 
 .user-table {
+  font-weight: bold;
   vertical-align: middle;
-  text-align: center;
+  text-align: left;
 }
 
 /* ユーザー情報下ボタン */
@@ -16,12 +17,13 @@
 
 #table-attendances {
   th {
+    font-weight: bold;
     vertical-align: middle;
-    text-align: center;
+    text-align: left;
   }
   td {
     vertical-align: middle;
-    text-align: center;
+    text-align: left;
   }
 }
 
