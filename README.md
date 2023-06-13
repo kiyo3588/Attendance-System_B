@@ -9,7 +9,3 @@
 * Rails
 * Git
 * Git(HTTPSからSSH通信へ変更)
-* 
-<% @total_working_hours += working_hours %>
-              <%= str_times = working_times(day.started_at, day.finished_at) %>
-              <% @total_working_times = @total_working_times.to_f + str_times.to_f %>
