@@ -32,7 +32,7 @@ class UsersController < ApplicationController
   end
   
   def update
-    if @user.update(user_params) && @user.basic_info.update(basic_info_params)
+    if @user.update(user_params) && @user.update(basic_info_params)
        flash[:success] = "ユーザー情報を更新しました。"
        redirect_to @user
     else
@@ -64,7 +64,7 @@ class UsersController < ApplicationController
         flash[:danger] = "基本情報の更新に失敗しました。<br>" + errors.join("<br>")
         raise ActiveRecord::Rollback
       end
-    end
+  end
     redirect_to users_url
   end
   
