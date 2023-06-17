@@ -18,5 +18,6 @@ Rails.application.routes.draw do
     end
     resources :attendances, only: :update
   end
+
 end
 
