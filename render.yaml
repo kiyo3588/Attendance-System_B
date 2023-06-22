@@ -1,0 +1,21 @@
+databases:
+  - name: kiyo-Attendance-System_B
+    databaseName: kiyo-Attendance-System_B
+    user: Kiyotoshi Ohara
+    region: singapore
+
+services:
+  - type: web
+    name: kiyo-Attendance-System_B
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: kiyo-Attendance-System_B
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
