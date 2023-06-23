@@ -13,7 +13,7 @@ services:
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
-      - key: DATABASE_URL
+      - key: postgres://kiyo_datebase3588_user:orED5PYCdjAfnNM9DCIkzUphefCkepU3@dpg-ci94h0dph6ekmcics5ig-a.singapore-postgres.render.com/kiyo_datebase3588
         fromDatabase:
           name: kiyo-Attendance-System_B
           property: connectionString
