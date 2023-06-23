@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.7.6'
+
 gem 'rails',        '~> 5.1.6'
 gem 'rails-i18n'
 gem 'bcrypt'
@@ -14,6 +16,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks',   '~> 5'
 gem 'jbuilder',     '~> 2.5'
+gem 'nokogiri', '1.15.2'
+gem 'rake', '13.0.6'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
