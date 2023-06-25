@@ -13,7 +13,7 @@ class UsersController < ApplicationController
       @users = @users.where("name LIKE ?", search_query)
       @search_title = "検索結果"
     else
-      @search_title = "ユーザー覧"
+      @search_title = "ユーザー一覧"
     end
     @users = @users.paginate(page: params[:page])
   end

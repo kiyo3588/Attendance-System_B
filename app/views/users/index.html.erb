@@ -8,7 +8,8 @@
     </div>
     <%= submit_tag "検索", class: "btn btn-primary" %>
   <% end %>
-  <%= will_paginate previous_label: "前", next_label: "次" %>
+  
+  <%= will_paginate @users, previous_label: "前", next_label: "次" %>
   <table class="table table-condensed table-hover" id="table-users">
     <thead>
       <tr>
@@ -33,7 +34,7 @@
       </tr>
     <% end %>
   </table>
-  <%= will_paginate previous_label: "前", next_label: "次" %>
+  <%= will_paginate @users, previous_label: "前", next_label: "次" %>
 </div>
 
 <!--モーダルウインドウ表示-->
